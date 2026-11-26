@@ -23,19 +23,28 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router",
+      [
+        "expo-router",
+        {
+          "origin": "https://uber.com/"
+        }
+      ],
       [
         "expo-splash-screen",
         {
           "android": {
             "backgroundColor": "#208AEF",
             "image": "./assets/images/splash.png",
-            "imageWidth": 200
+            "imageWidth": 200,
+            "resizeMode": "contain"
           }
         }
       ],
       "expo-font",
-      "expo-maps"
+      "expo-maps",
+      "@clerk/expo",
+      "expo-secure-store",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
