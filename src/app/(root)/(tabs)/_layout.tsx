@@ -4,7 +4,7 @@ import { Image, ImageSourcePropType, Platform, View } from 'react-native';
 
 export const unstable_settings = {
     // Ensure any route can link back to `/`
-    anchor: 'home',
+    // anchor: 'home',
 };
 
 type TTabIcon = {
